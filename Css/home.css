@@ -1,0 +1,169 @@
+h1 {
+    display: inline;
+    border-bottom: 1px solid blueviolet;
+    text-align: center;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+span {
+    color: blueviolet;
+}
+
+p {
+    width: 510px;
+    text-align: right;
+}
+
+.main-hr {
+    width: 30%;
+    border: none;
+    border-top: 1px solid #c3c3c3;
+}
+
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+}
+
+.add-btn:hover {
+    width: 120px;
+}
+
+.add-btn::before,
+.add-btn::after {
+    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 10px;
+    top: calc(50% - 2px);
+    background: blueviolet;
+}
+
+.add-btn::after {
+    right: 14px;
+    overflow: hidden;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+    left: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+    outline: none;
+}
+
+.btn-txt {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+    width: 4px;
+    border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+    opacity: 1;
+}
+
+.add-icon::after,
+.add-icon::before {
+    transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    top: calc(50% - 10px);
+    background: blueviolet;
+    overflow: hidden;
+}
+
+.add-icon::before {
+    left: 22px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+    right: 22px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+    left: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+    right: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+}
+
+button {
+    font-family: 'Cairo', sans-serif;
+}
+
+img {
+    width: 120%;
+}
+
+.Container {
+    direction: ltr;
+    width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imginCOn " "text";
+    /*border: solid 2px yellow;*/
+    text-align: center;
+}
+
+.text {
+    margin-top: 20%;
+    margin-left: 17%;
+}
+
+@media(max-width:800px) {
+    .Container {
+        width: auto;
+        height: auto;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "imginCOn" "hedinCon";
+        /*border: solid 2px yellow;*/
+        grid-gap: 25px;
+        overflow: hidden;
+    }
+    .text {
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    img {
+        width: 100%;
+    }
+    p {
+        width: auto;
+        text-align: right;
+    }
+}

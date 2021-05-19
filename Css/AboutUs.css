@@ -1,0 +1,26 @@
+.Container {
+    direction: ltr;
+    width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "mohammedSalah" "Maiana" "Nagwa" "Ghada" "Samar";
+    /*border: solid 2px yellow;*/
+    text-align: center;
+}
+
+@media(max-width:800px) {
+    .Container {
+        width: auto;
+        height: auto;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "mohammedSalah" "Maiana" "Nagwa" "Ghada" "Samar";
+        /*border: solid 2px yellow;*/
+        grid-gap: 25px;
+        overflow: hidden;
+    }
+}
