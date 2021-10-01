@@ -1,3 +1,15 @@
+body.bodyAbout {
+    direction: initial;
+}
+
+.hed2 {
+    margin: 0;
+}
+
+.aboutUS {
+    margin-top: 0;
+}
+
 .Container {
     direction: ltr;
     width: auto;
@@ -8,6 +20,21 @@
     grid-template-areas: "mohammedSalah" "Maiana" "Nagwa" "Ghada" "Samar";
     /*border: solid 2px yellow;*/
     text-align: center;
+}
+
+::selection {
+    color: white;
+    background: blueviolet;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rebeccapurple;
+    height: auto;
 }
 
 @media(max-width:800px) {

@@ -9,6 +9,11 @@ body {
     width: 50%;
 }
 
+::selection {
+    color: white;
+    background: blueviolet;
+}
+
 h3 {
     text-align: center;
     color: white;

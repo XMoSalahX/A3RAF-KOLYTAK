@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+::selection {
+    color: white;
+    background: blueviolet;
+}
+
 span {
     color: blueviolet;
 }
