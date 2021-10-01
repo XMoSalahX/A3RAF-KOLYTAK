@@ -19,7 +19,7 @@ span {
 }
 
 p {
-    width: 510px;
+    width: 90%;
     text-align: right;
 }
 
@@ -149,6 +149,32 @@ img {
     margin-left: 17%;
 }
 
+@media (height:1366px) {
+    .Container {
+        width: auto;
+        height: auto;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "imginCOn" "hedinCon";
+        /*border: solid 2px yellow;*/
+        grid-gap: 30px;
+        overflow: hidden;
+        height: calc(100vh - 30px);
+    }
+    p {
+        width: auto;
+        text-align: right;
+    }
+    .Container img {
+        width: auto;
+    }
+    .text {
+        margin: 10px;
+    }
+}
+
 @media(max-width:800px) {
     .Container {
         width: auto;
@@ -156,11 +182,12 @@ img {
         margin: 10px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
         grid-template-areas: "imginCOn" "hedinCon";
         /*border: solid 2px yellow;*/
-        grid-gap: 25px;
+        grid-gap: 30px;
         overflow: hidden;
+        margin-bottom: 120px;
     }
     .text {
         margin-top: 5%;
@@ -172,5 +199,11 @@ img {
     p {
         width: auto;
         text-align: right;
+    }
+}
+
+@media(max-width:280px) {
+    .end {
+        font-size: 14px;
     }
 }
