@@ -6,6 +6,7 @@ h1 {
 
 body {
     font-family: 'Cairo', sans-serif;
+    margin: 0;
 }
 
 span {
@@ -135,6 +136,7 @@ img {
     grid-template-areas: "imginCOn " "text";
     /*border: solid 2px yellow;*/
     text-align: center;
+    height: calc(100vh - 30px);
 }
 
 .text {

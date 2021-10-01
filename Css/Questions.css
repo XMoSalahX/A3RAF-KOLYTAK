@@ -1,3 +1,11 @@
+body {
+    margin: 0;
+}
+
+.Container .content {
+    height: 150px;
+}
+
 .button {
     border: none;
     color: white;
@@ -76,6 +84,7 @@ img {
     grid-template-areas: "imginCOn " "text";
     /*border: solid 2px yellow;*/
     text-align: center;
+    height: calc(100vh - 30px);
 }
 
 .text {
