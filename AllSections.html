@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 
 <head>
     <meta charset="utf-8" />
@@ -7,18 +7,22 @@
     <link rel="shortcut icon" type="image/png" href="Img/icons8-graduation-cap-80.png">
     <meta name="blog for tech" content="programing" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="System to chosen the best section">
     <link rel="stylesheet" href="Css/Section Style.css">
-
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="preload">
     <style>
         h1 {
             background: rgba(58, 9, 104, .7)
         }
         
-        h3 {
-            background: rgba(82, 19, 141, .7);
+        h2 {
+            text-align: center;
+            color: white;
+            background-color: rgb(82, 19, 141);
+            padding: 20px;
+            width: auto;
+            font-size: 20px;
         }
         
         .button1 {
@@ -26,62 +30,107 @@
             margin: auto;
         }
         
-        body {
+        .background {
+            position: relative;
+            min-height: 153vh;
             background-image: url('/Img/commerce.jpg');
-            background-size: contain;
+            background-size: cover;
+            background-repeat: no-repeat;
             background-attachment: fixed;
-            background-size: 110%;
+        }
+        
+        .container {
+            position: absolute;
+            top: 0;
+        }
+        
+        @media(max-width:1280px) {
+            .background {
+                min-height: 185vh;
+            }
+        }
+        
+        @media(max-width:1024px) {
+            .background {
+                min-height: 260vh;
+            }
+        }
+        
+        @media(max-width:1024px) and (height:1366px) {
+            .background {
+                min-height: 115vh;
+            }
         }
         
         @media(max-width:800px) {
-            body {
-                background-image: url('/Img/allSComm.jpg');
+            .container {
+                background-image: url('Img/allSComm.jpg');
                 background-size: cover;
+            }
+            .background {
+                min-height: 115vh;
+            }
+        }
+        
+        @media(max-width:280px) {
+            .container {
+                height: 524%;
+            }
+            .end {
+                font-size: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     </style>
 </head>
 
 <body>
-    <h1>قسم نظم معلومات الأعمال " BIS"
-    </h1>
+    <div class="background"></div>
+    <div class="container">
+        <h1>قسم نظم معلومات الأعمال " BIS"
+        </h1>
 
-    <h3>قسم نظم معلومات الأعمال " BIS " هو اختصار لـ«Business Information System» وهو أحد البرامج التابعة لكلية التجارة وإدارة الأعمال يعمل القسم على دراسة إدارة الأعمال ونظم المعلومات، والدراسة بالبرنامج تكون باللغة الإنجليزية مع إمكانية دراسة بعض المقررات
-        باللغة العربية بالبرنامج مثل مقررات حقوق الإنسان والقانون (وفقا لما تقترحه لجنة الإشراف على البرنامج ويوافق عليه مجلس الكلية ، ويوجد هذا القسم بجامعتي طنطا وحلوان. وهو برنامج بمقابل مادي يقدر بحوالي 22 ألف جنية في السنة شامله قيمة المراجع الخاصة
-        بالدراسة .
-    </h3>
-    <a href="Bis Section.html">
-        <button class="button button1">للمزيد من المعلومات</button>
-    </a>
-    <br>
-    <br>
-    <br>
-    <h1>برنامج بكالوريوس المحاسبة والتمويل
+        <h2>قسم نظم معلومات الأعمال " BIS " هو اختصار لـ«Business Information System» وهو أحد البرامج التابعة لكلية التجارة وإدارة الأعمال يعمل القسم على دراسة إدارة الأعمال ونظم المعلومات، والدراسة بالبرنامج تكون باللغة الإنجليزية مع إمكانية دراسة بعض المقررات
+            باللغة العربية بالبرنامج مثل مقررات حقوق الإنسان والقانون (وفقا لما تقترحه لجنة الإشراف على البرنامج ويوافق عليه مجلس الكلية ، ويوجد هذا القسم بجامعتي طنطا وحلوان. وهو برنامج بمقابل مادي يقدر بحوالي 22 ألف جنية في السنة شامله قيمة المراجع
+            الخاصة بالدراسة .
+        </h2>
+        <a href="Bis Section.html">
+            <button class="button button1">للمزيد من المعلومات</button>
+        </a>
+        <br>
+        <br>
+        <br>
+        <h1>برنامج بكالوريوس المحاسبة والتمويل
 
-    </h1>
+        </h1>
 
-    <h3>برنامج المحاسبة والتمويل هو برنامج متخصص ومتميز يشمل تخصصي المحاسبة والتمويل، وهو ما يوائم احتياجات سوق العمل، ويواكب الاتجاهات الحديثة في العلوم المحاسبية والتمويلية من ناحية، كما يلتزم بكافة متطلبات الجودة والاعتماد الأكاديمي من ناحية أخري. .
-    </h3>
-    <a href="A+F.html">
-        <button class="button button1">للمزيد من المعلومات</button>
-    </a>
-    <br>
-    <br>
-    <br>
-    <h1>برنامج الدراسة باللغة العربية او الانجليزيه
+        <h2>برنامج المحاسبة والتمويل هو برنامج متخصص ومتميز يشمل تخصصي المحاسبة والتمويل، وهو ما يوائم احتياجات سوق العمل، ويواكب الاتجاهات الحديثة في العلوم المحاسبية والتمويلية من ناحية، كما يلتزم بكافة متطلبات الجودة والاعتماد الأكاديمي من ناحية أخري.
+            .
+        </h2>
+        <a href="A+F.html">
+            <button class="button button1">للمزيد من المعلومات</button>
+        </a>
+        <br>
+        <br>
+        <br>
+        <h1>برنامج الدراسة باللغة العربية او الانجليزيه
 
-    </h1>
+        </h1>
 
-    <h3>يعتبر شعبة عربي داخل كليه التجارة من اهم الشعب ذات الاقبال الشديد طبعا لان الدراسة تكون باللغة العربية لغة الطالب الام وهذه من اهم مميزات هذا القسم ولكن يجب على الطالب الاجتهاد لينمي اللغة الإنجليزية عنده نظرا الى ان اهم فرص العمل تطلب لغة انجليزيه
-        قوية. مدة الدراسة لنيل درجة البكالوريوس أربع سنوات على ثمانية فصول دراسية. وبندرسد في الثلاث سنوات الاولى في الكلية دراسة عامه ويتم التخصص في قسم واحد من الاربع اقسام في رابع سنه (البكالوريوس).
+        <h2>يعتبر شعبة عربي داخل كليه التجارة من اهم الشعب ذات الاقبال الشديد طبعا لان الدراسة تكون باللغة العربية لغة الطالب الام وهذه من اهم مميزات هذا القسم ولكن يجب على الطالب الاجتهاد لينمي اللغة الإنجليزية عنده نظرا الى ان اهم فرص العمل تطلب لغة انجليزيه
+            قوية. مدة الدراسة لنيل درجة البكالوريوس أربع سنوات على ثمانية فصول دراسية. وبندرسد في الثلاث سنوات الاولى في الكلية دراسة عامه ويتم التخصص في قسم واحد من الاربع اقسام في رابع سنه (البكالوريوس).
 
-    </h3>
-    <a href="Arabic + English Section.html">
-        <button class="button button1">للمزيد من المعلومات</button>
-    </a>
-    <div class="end" style="margin-top: 10%;">
-        ندعو الله ان يوفقكم جميعا &copy;
-        <a href="Aboutus.html" style="color: white; text-align: center;"> فريق العمل</a>
+        </h2>
+        <a href="Arabic + English Section.html">
+            <button class="button button1">للمزيد من المعلومات</button>
+        </a>
+        <div class="end" style="margin-top: 10%;">
+            ندعو الله ان يوفقكم جميعا &copy;
+            <a href="Aboutus.html" style="color: white; text-align: center;"> فريق العمل</a>
+        </div>
+
     </div>
 </body>
 

@@ -264,25 +264,25 @@ Button2.addEventListener('click', function() {
           ${best_Section}`
             if (best_Section == "والقسم الانسب اليك هو شعبة اللغة العربية " || best_Section == "والقسم الانسب اليك هو شعبة اللغة الانجليزية ") {
                 //add your url here
-                let url = 'http://127.0.0.1:5500/Arabic%20+%20English%20Section.html'
+                let url = '../Arabic + English Section.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
             } else if (best_Section == "والقسم الانسب اليك هو شعبة المحاسبة والتمويل") {
                 //add your url here
-                let url = 'http://127.0.0.1:5500/A+F.html'
+                let url = '../A+F.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
             } else {
                 //add your url here
-                let url = 'http://127.0.0.1:5500/Bis%20Section.html'
+                let url = '../Bis Section.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
             }
             Button2.addEventListener('click', function() {
-                window.open('http://127.0.0.1:5500/AllSections.html', '_blank')
+                window.open('../AllSections.html', '_blank')
             })
             Button1.textContent = "أعرض القسم المناسب"
             Button2.textContent = "أعرض كل الاقسام"
