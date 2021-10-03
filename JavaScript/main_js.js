@@ -127,13 +127,13 @@ Button1.addEventListener('click', function() {
           ${best_Section}`
             if (best_Section == "والقسم الانسب اليك هو شعبة اللغة العربية " || best_Section == "والقسم الانسب اليك هو شعبة اللغة الانجليزية ") {
                 //add your url here
-                let url = '../Arabic + English Section.html'
+                let url = '../../A3RAF-KOLYTAK/Arabic + English Section.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
             } else if (best_Section == "والقسم الانسب اليك هو شعبة المحاسبة والتمويل") {
                 //add your url here
-                let url = '../A+F.html'
+                let url = '../../A3RAF-KOLYTAK/A+F.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
@@ -145,7 +145,7 @@ Button1.addEventListener('click', function() {
                 })
             }
             Button2.addEventListener('click', function() {
-                window.open('../AllSections.html', '_blank')
+                window.open('../../A3RAF-KOLYTAK/AllSections.html', '_blank')
             })
             Button1.textContent = "أعرض القسم المناسب"
             Button2.textContent = "أعرض كل الاقسام"
@@ -264,13 +264,13 @@ Button2.addEventListener('click', function() {
           ${best_Section}`
             if (best_Section == "والقسم الانسب اليك هو شعبة اللغة العربية " || best_Section == "والقسم الانسب اليك هو شعبة اللغة الانجليزية ") {
                 //add your url here
-                let url = '../Arabic + English Section.html'
+                let url = '../../A3RAF-KOLYTAK/Arabic + English Section.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
             } else if (best_Section == "والقسم الانسب اليك هو شعبة المحاسبة والتمويل") {
                 //add your url here
-                let url = '../A+F.html'
+                let url = '../../A3RAF-KOLYTAK/A+F.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
@@ -282,7 +282,7 @@ Button2.addEventListener('click', function() {
                 })
             }
             Button2.addEventListener('click', function() {
-                window.open('../AllSections.html', '_blank')
+                window.open('../../A3RAF-KOLYTAK/AllSections.html', '_blank')
             })
             Button1.textContent = "أعرض القسم المناسب"
             Button2.textContent = "أعرض كل الاقسام"
