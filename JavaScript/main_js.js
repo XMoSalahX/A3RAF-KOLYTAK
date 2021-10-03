@@ -139,7 +139,7 @@ Button1.addEventListener('click', function() {
                 })
             } else {
                 //add your url here
-                let url = '../Bis Section.html'
+                let url = '../Bis-Section.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })
@@ -276,7 +276,7 @@ Button2.addEventListener('click', function() {
                 })
             } else {
                 //add your url here
-                let url = '../Bis Section.html'
+                let url = '../Bis-Section.html'
                 Button1.addEventListener('click', function() {
                     window.open(url, '_blank')
                 })

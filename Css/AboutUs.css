@@ -40,6 +40,10 @@ body.bodyAbout {
     width: 300px;
 }
 
+.name {
+    background-color: transparent;
+}
+
 @media (height:1366px) {
     .Container {
         height: calc(100vh - 196px);
